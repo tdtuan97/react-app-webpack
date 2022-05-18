@@ -1,0 +1,14 @@
+.form-service {
+    .form-service-inline {
+        display: inline-block;
+        width: calc(50% - 6px);
+
+        .form-service-child {
+            width: 100%;
+        }
+    }
+
+    .form-service-unit{
+        float: right;
+    }
+}

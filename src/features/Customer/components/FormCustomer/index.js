@@ -1,0 +1,1 @@
+export {default as FormCustomer} from './Component'

@@ -1,0 +1,19 @@
+.left-slider {
+    overflow: hidden;
+    padding-top: 48px;
+    flex: 0 0 208px;
+    max-width: 208px;
+    min-width: 208px;
+    width: 208px;;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+
+    .left-slider-menu {
+        height: 100%;
+        border-right: 0;
+    }
+}

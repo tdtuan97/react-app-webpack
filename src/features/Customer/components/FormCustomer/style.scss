@@ -1,0 +1,14 @@
+.form-customer {
+    .form-customer-inline {
+        display: inline-block;
+        width: calc(50% - 6px);
+
+        .form-customer-child {
+            width: 100%;
+        }
+    }
+
+    .form-customer-right{
+        float: right;
+    }
+}

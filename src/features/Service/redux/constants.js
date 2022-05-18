@@ -1,0 +1,12 @@
+export const SERVICE_FETCH                  = 'SERVICE_FETCH'
+export const SERVICE_FETCH_LOADING          = 'SERVICE_FETCH_LOADING'
+export const SERVICE_CREATE                 = 'SERVICE_CREATE'
+export const SERVICE_CREATE_LOADING         = 'SERVICE_CREATE_LOADING'
+export const SERVICE_DETAIL                 = 'SERVICE_DETAIL'
+export const SERVICE_DETAIL_LOADING         = 'SERVICE_DETAIL_LOADING'
+export const SERVICE_UPDATE                 = 'SERVICE_UPDATE'
+export const SERVICE_UPDATE_LOADING         = 'SERVICE_UPDATE_LOADING'
+export const SERVICE_DELETE                 = 'SERVICE_DELETE'
+export const SERVICE_DELETE_VISIBLE_CONFIRM = 'SERVICE_DELETE_VISIBLE_CONFIRM'
+export const SERVICE_DELETE_LOADING         = 'SERVICE_DELETE_LOADING'
+

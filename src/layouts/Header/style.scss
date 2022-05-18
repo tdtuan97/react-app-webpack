@@ -1,0 +1,86 @@
+.page-header {
+    padding: 0;
+    height: 48px;
+    line-height: 48px;
+    width: 100%;
+    z-index: 100;
+    right: 0;
+    position: fixed;
+    top: 0;
+    transition: width .3s cubic-bezier(.645, .045, .355, 1);
+
+    .page-header-content {
+        background-color: #001529;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 16px;
+        box-shadow: 0 1px 4px rgba(0, 21, 41, .08);
+
+        .logo {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-header-space {
+            flex: 1 1 0;
+        }
+
+        .page-header-control {
+            align-items: center;
+            display: flex;
+            float: right;
+            margin-left: auto;
+            height: 100%;
+            gap: 8px;
+
+            .page-header-item {
+                .page-header-menu {
+                    display: flex;
+                    align-items: center;
+                    height: 48px;
+                    padding: 0 12px;
+                    cursor: pointer;
+                    transition: all .3s;
+
+                    &:hover {
+                        background: #252a3d;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.page-header-menu-item {
+    clear: both;
+    margin: 0;
+    padding: 5px 12px;
+    color: rgba(0, 0, 0, .85);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: all .3s;
+
+    .ant-dropdown-menu-title-content {
+        span {
+            margin-right: 8px;
+        }
+
+    }
+}
+
+.page-header-avatar {
+    margin-right: 8px;
+    color: var(--ant-primary-color);
+    vertical-align: top;
+    background: hsla(0, 0%, 100%, .85);
+}
+
+.page-header-title {
+    color: #fff;
+}

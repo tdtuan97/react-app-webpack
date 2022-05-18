@@ -1,0 +1,24 @@
+.app-layout-space{
+    width: 208px;
+    overflow: hidden;
+    flex: 0 0 208px;
+    max-width: 208px;
+    min-width: 208px;
+    transition: background-color 0.3s ease 0s, min-width 0.3s ease 0s, max-width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.app-header-space{
+    padding: 0 50px;
+    color: rgba(0,0,0,.85);
+    height: 48px;
+    line-height: 48px;
+    background: transparent;
+}
+
+.app-content-wrapper{
+    position: relative;
+    .app-content{
+        padding: 24px;
+        margin: 0;
+    }
+}

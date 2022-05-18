@@ -1,0 +1,17 @@
+// index is the entry for all styles.
+@import 'antd.css';
+@import 'variables';
+@import 'mixins';
+@import 'global';
+
+// Layout
+@import "../layouts/style";
+
+// Auth
+@import "../features/Auth/style";
+
+// App
+@import "../features/Home/style";
+@import "../features/Exceptions/style";
+@import "../features/Product/style";
+@import "../features/Customer/style";
