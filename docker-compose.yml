@@ -1,0 +1,40 @@
+version: '3'
+services:
+  #Node Service
+  node:
+    build:
+      context: ./services/node
+      dockerfile: Dockerfile
+    container_name: admin_node
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3000:3000"
+    #command: "npm run start"
+    volumes:
+      - ./application/:/app
+    networks:
+      - app-network
+
+  #Nginx Service
+  nginx:
+    build:
+      context: ./services/nginx
+      dockerfile: Dockerfile
+    container_name: admin_nginx
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./application/build:/var/www/html/public
+      - ./services/nginx/conf.d/:/etc/nginx/conf.d/
+      - ./services/nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - app-network
+
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge
